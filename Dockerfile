@@ -2,6 +2,8 @@ FROM node:14-slim
 
 WORKDIR /app
 
+RUN mkdir ./DATAROOT
+
 RUN npm i -g pm2
 
 COPY package*.json ./
